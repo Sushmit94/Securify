@@ -1,0 +1,67 @@
+rules:
+  - id: js-eval-usage
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: >-
+      eval() executes arbitrary JavaScript. If the argument includes any
+      user-controlled data, this is a code injection vulnerability.
+    metadata:
+      cwe: ["CWE-95"]
+      vulnerability_class: ["Code Injection"]
+    pattern: eval(...)
+
+  - id: js-innerhtml-assignment
+    languages: [javascript, typescript]
+    severity: WARNING
+    message: >-
+      Assigning to innerHTML with dynamic content can lead to cross-site
+      scripting (XSS) if the content is not sanitized. Prefer textContent or a
+      sanitization library (e.g. DOMPurify).
+    metadata:
+      cwe: ["CWE-79"]
+      vulnerability_class: ["Cross-Site Scripting (XSS)"]
+    pattern: $EL.innerHTML = $DATA
+
+  - id: js-hardcoded-secret
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: >-
+      A credential-like value appears to be hardcoded in source. Move secrets
+      to environment variables.
+    metadata:
+      cwe: ["CWE-798"]
+      vulnerability_class: ["Hardcoded Credentials"]
+    patterns:
+      - pattern-either:
+          - pattern: const $VAR = "..."
+          - pattern: let $VAR = "..."
+          - pattern: var $VAR = "..."
+      - metavariable-regex:
+          metavariable: $VAR
+          regex: (?i)^(password|secret|apikey|api_key|token|privatekey)$
+
+  - id: js-sql-injection-template-literal
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: >-
+      A SQL query built via string concatenation/template literal with an
+      interpolated variable is vulnerable to SQL injection. Use a parameterized
+      query API instead.
+    metadata:
+      cwe: ["CWE-89"]
+      vulnerability_class: ["SQL Injection"]
+    patterns:
+      - pattern-either:
+          - pattern: $DB.query(`... ${$X} ...`)
+          - pattern: $DB.query("..." + $X + "...")
+
+  - id: js-insecure-random-for-security
+    languages: [javascript, typescript]
+    severity: WARNING
+    message: >-
+      Math.random() is not cryptographically secure. Do not use it to generate
+      tokens, session IDs, or other security-sensitive values.
+    metadata:
+      cwe: ["CWE-330"]
+      vulnerability_class: ["Insecure Randomness"]
+    pattern: Math.random()

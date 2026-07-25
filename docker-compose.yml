@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: securify
+      POSTGRES_PASSWORD: securify
+      POSTGRES_DB: securify
+    volumes:
+      - securify_pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg2://securify:securify@db:5432/securify
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ml_model/checkpoints:/app/ml_model/checkpoints
+
+  frontend:
+    build:
+      context: ./frontend
+    restart: unless-stopped
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    ports:
+      - "3000:5173"
+
+volumes:
+  securify_pgdata:

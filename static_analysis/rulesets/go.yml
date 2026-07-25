@@ -1,0 +1,40 @@
+rules:
+  - id: go-sql-injection-sprintf
+    languages: [go]
+    severity: ERROR
+    message: >-
+      A SQL query is built with fmt.Sprintf instead of a parameterized query.
+      This is a SQL injection vulnerability if any interpolated value is
+      user-controlled.
+    metadata:
+      cwe: ["CWE-89"]
+      vulnerability_class: ["SQL Injection"]
+    patterns:
+      - pattern-either:
+          - pattern: $DB.Query(fmt.Sprintf(...))
+          - pattern: $DB.Exec(fmt.Sprintf(...))
+
+  - id: go-command-injection-exec
+    languages: [go]
+    severity: ERROR
+    message: >-
+      exec.Command built with a variable command/argument sourced from
+      concatenation can allow command injection if user-controlled.
+    metadata:
+      cwe: ["CWE-78"]
+      vulnerability_class: ["Command Injection"]
+    pattern: exec.Command($CMD, ...)
+
+  - id: go-hardcoded-secret
+    languages: [go]
+    severity: ERROR
+    message: A credential-like value appears to be hardcoded in source.
+    metadata:
+      cwe: ["CWE-798"]
+      vulnerability_class: ["Hardcoded Credentials"]
+    patterns:
+      - pattern-either:
+          - pattern: $VAR := "..."
+      - metavariable-regex:
+          metavariable: $VAR
+          regex: (?i)^(password|secret|apikey|token|privatekey)$

@@ -1,0 +1,63 @@
+rules:
+  - id: java-sql-injection-statement
+    languages: [java]
+    severity: ERROR
+    message: >-
+      A SQL query is built by concatenating a String into Statement.execute*
+      instead of using PreparedStatement placeholders. This is a SQL injection
+      vulnerability if any part of the string is user-controlled.
+    metadata:
+      cwe: ["CWE-89"]
+      vulnerability_class: ["SQL Injection"]
+    patterns:
+      - pattern-either:
+          - pattern: $STMT.executeQuery("..." + ...)
+          - pattern: $STMT.executeUpdate("..." + ...)
+          - pattern: $STMT.execute("..." + ...)
+
+  - id: java-hardcoded-secret
+    languages: [java]
+    severity: ERROR
+    message: A credential-like value appears to be hardcoded in source.
+    metadata:
+      cwe: ["CWE-798"]
+      vulnerability_class: ["Hardcoded Credentials"]
+    patterns:
+      - pattern-either:
+          - pattern: String $VAR = "...";
+      - metavariable-regex:
+          metavariable: $VAR
+          regex: (?i)^(password|secret|apikey|token|privatekey)$
+
+  - id: java-insecure-deserialization
+    languages: [java]
+    severity: ERROR
+    message: >-
+      ObjectInputStream.readObject() on untrusted data can lead to arbitrary
+      code execution during deserialization.
+    metadata:
+      cwe: ["CWE-502"]
+      vulnerability_class: ["Insecure Deserialization"]
+    pattern: $OIS.readObject()
+
+  - id: java-xxe-documentbuilderfactory
+    languages: [java]
+    severity: WARNING
+    message: >-
+      DocumentBuilderFactory is created without disabling external entity
+      resolution, which can lead to XML External Entity (XXE) injection.
+    metadata:
+      cwe: ["CWE-611"]
+      vulnerability_class: ["XML External Entities (XXE)"]
+    pattern: DocumentBuilderFactory.newInstance()
+
+  - id: java-command-injection-runtime-exec
+    languages: [java]
+    severity: ERROR
+    message: >-
+      Runtime.exec() called with a concatenated string allows command injection
+      if any part originates from untrusted input.
+    metadata:
+      cwe: ["CWE-78"]
+      vulnerability_class: ["Command Injection"]
+    pattern: Runtime.getRuntime().exec($CMD + ...)

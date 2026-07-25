@@ -1,0 +1,67 @@
+rules:
+  - id: c-unsafe-strcpy
+    languages: [c, cpp]
+    severity: ERROR
+    message: >-
+      strcpy()/strcat() do not bound-check the destination buffer and are a
+      classic source of buffer overflows. Use strncpy/strlcpy/snprintf or
+      std::string instead.
+    metadata:
+      cwe: ["CWE-120"]
+      vulnerability_class: ["Buffer Overflow"]
+    patterns:
+      - pattern-either:
+          - pattern: strcpy($DST, $SRC)
+          - pattern: strcat($DST, $SRC)
+
+  - id: c-unsafe-sprintf
+    languages: [c, cpp]
+    severity: ERROR
+    message: >-
+      sprintf() does not bound the number of bytes written to the destination
+      buffer. Use snprintf() with an explicit size instead.
+    metadata:
+      cwe: ["CWE-120"]
+      vulnerability_class: ["Buffer Overflow"]
+    pattern: sprintf($DST, ...)
+
+  - id: c-format-string-vulnerability
+    languages: [c, cpp]
+    severity: ERROR
+    message: >-
+      printf-family function called with a non-literal format string. If the
+      format string contains user input, this allows memory reads/writes via
+      format specifiers.
+    metadata:
+      cwe: ["CWE-134"]
+      vulnerability_class: ["Format String Vulnerability"]
+    patterns:
+      - pattern-either:
+          - pattern: printf($FMT)
+          - pattern: fprintf($STREAM, $FMT)
+      - metavariable-pattern:
+          metavariable: $FMT
+          patterns:
+            - pattern-not: "\"...\""
+
+  - id: c-gets-usage
+    languages: [c, cpp]
+    severity: ERROR
+    message: >-
+      gets() cannot bound the number of characters read and is inherently
+      unsafe; it was removed from the C standard. Use fgets() instead.
+    metadata:
+      cwe: ["CWE-120"]
+      vulnerability_class: ["Buffer Overflow"]
+    pattern: gets($BUF)
+
+  - id: c-command-injection-system
+    languages: [c, cpp]
+    severity: ERROR
+    message: >-
+      system() called with a concatenated/formatted string allows shell command
+      injection if any part originates from untrusted input.
+    metadata:
+      cwe: ["CWE-78"]
+      vulnerability_class: ["Command Injection"]
+    pattern: system($CMD)

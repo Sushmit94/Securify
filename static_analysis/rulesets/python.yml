@@ -1,0 +1,85 @@
+rules:
+  - id: python-sql-injection-string-format
+    languages: [python]
+    severity: ERROR
+    message: >-
+      A SQL query is being built with string formatting/concatenation instead of
+      parameterized placeholders. If any part of the string comes from user input,
+      this is a SQL injection vulnerability.
+    metadata:
+      cwe: ["CWE-89"]
+      vulnerability_class: ["SQL Injection"]
+      owasp: ["A03:2021 - Injection"]
+    patterns:
+      - pattern-either:
+          - pattern: $CURSOR.execute("..." % ...)
+          - pattern: $CURSOR.execute(f"...")
+          - pattern: $CURSOR.execute("..." + ...)
+          - pattern: $CURSOR.execute("...".format(...))
+
+  - id: python-hardcoded-secret
+    languages: [python]
+    severity: ERROR
+    message: >-
+      A credential-like value (password, secret key, token, API key) appears to
+      be hardcoded. Store secrets in environment variables or a secrets manager.
+    metadata:
+      cwe: ["CWE-798"]
+      vulnerability_class: ["Hardcoded Credentials"]
+    patterns:
+      - pattern-either:
+          - pattern: $VAR = "..."
+      - metavariable-regex:
+          metavariable: $VAR
+          regex: (?i)^(password|passwd|secret|api_key|apikey|access_token|auth_token|private_key)$
+
+  - id: python-eval-exec-on-input
+    languages: [python]
+    severity: ERROR
+    message: >-
+      eval()/exec() called with data that may originate from user input. This
+      allows arbitrary code execution.
+    metadata:
+      cwe: ["CWE-95"]
+      vulnerability_class: ["Code Injection"]
+    patterns:
+      - pattern-either:
+          - pattern: eval(...)
+          - pattern: exec(...)
+
+  - id: python-insecure-deserialization-pickle
+    languages: [python]
+    severity: ERROR
+    message: >-
+      pickle.load/loads on untrusted data can execute arbitrary code during
+      deserialization. Use a safe serialization format (e.g. JSON) for untrusted input.
+    metadata:
+      cwe: ["CWE-502"]
+      vulnerability_class: ["Insecure Deserialization"]
+    patterns:
+      - pattern-either:
+          - pattern: pickle.load(...)
+          - pattern: pickle.loads(...)
+
+  - id: python-yaml-unsafe-load
+    languages: [python]
+    severity: WARNING
+    message: >-
+      yaml.load() without an explicit safe Loader can execute arbitrary Python
+      objects embedded in the YAML document. Use yaml.safe_load() instead.
+    metadata:
+      cwe: ["CWE-502"]
+      vulnerability_class: ["Insecure Deserialization"]
+    pattern: yaml.load($DATA)
+
+  - id: python-subprocess-shell-true
+    languages: [python]
+    severity: ERROR
+    message: >-
+      subprocess called with shell=True and a non-constant command allows shell
+      metacharacters from untrusted input to be interpreted, leading to command injection.
+    metadata:
+      cwe: ["CWE-78"]
+      vulnerability_class: ["Command Injection"]
+    patterns:
+      - pattern: subprocess.$FUNC(..., shell=True, ...)
