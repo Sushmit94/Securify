@@ -1,6 +1,6 @@
 # AI-Based Framework for Automated Source Code Vulnerability Detection
 
-A hybrid, multi-layer system that detects security vulnerabilities in source code by combining **static analysis**, a **fine-tuned machine learning classifier**, and **LLM-based reasoning**. Designed as a semester-long faculty-supervised internship project, with a language-agnostic architecture that supports broad coverage across many programming languages while providing deep, ML-backed detection for a focused subset.
+A hybrid, multi-layer system that detects security vulnerabilities in source code by combining **static analysis**, a **fine-tuned machine learning classifier**, and **LLM-based reasoning**.
 
 ---
 
