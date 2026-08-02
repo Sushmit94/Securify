@@ -3,6 +3,12 @@ export default function FindingsTable({ files }) {
     f.findings.map((finding) => ({ file: f.file, ...finding }))
   );
 
+
+
+
+
+
+
   if (rows.length === 0) {
     return <p>No findings.</p>;
   }
