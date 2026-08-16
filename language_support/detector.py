@@ -1,9 +1,10 @@
 """Detects the programming language of an input file.
 
 Strategy: fast extension lookup first (covers the overwhelming majority of
-real files); falls back to `guesslang` content-based classification only for
-ambiguous or extensionless files, since guesslang is slow and occasionally
-wrong on short snippets.
+real files); falls back to `pygments` content-based lexer guessing only for
+ambiguous or extensionless files. Pygments is lightweight, actively
+maintained, and has no heavy ML dependency chain (unlike `guesslang`, which
+pulls in an outdated, unmaintained TensorFlow pin).
 """
 from __future__ import annotations
 
@@ -42,13 +43,31 @@ EXTENSION_MAP: dict[str, str] = {
     ".tf": "terraform",
 }
 
+# Pygments lexer aliases don't always match our internal language names
+# (e.g. pygments says "c++" / "cpp", "shell" / "bash", "yaml" varies by
+# version). Normalize the common ones here so downstream routing
+# (language_registry.py) sees the same names it would from EXTENSION_MAP.
+_PYGMENTS_ALIAS_MAP: dict[str, str] = {
+    "python3": "python",
+    "py3": "python",
+    "js": "javascript",
+    "node.js": "javascript",
+    "typescript": "typescript",
+    "c++": "cpp",
+    "cplusplus": "cpp",
+    "shell": "bash",
+    "shell-session": "bash",
+    "console": "bash",
+    "c#": "csharp",
+    "yml": "yaml",
+}
+
 
 class LanguageDetector:
-    """Detects language for a single file, with an optional guesslang fallback."""
+    """Detects language for a single file, with an optional pygments fallback."""
 
-    def __init__(self, use_guesslang_fallback: bool = True) -> None:
-        self.use_guesslang_fallback = use_guesslang_fallback
-        self._guesser = None  # lazily constructed; guesslang is an optional, heavier dependency
+    def __init__(self, use_content_fallback: bool = True) -> None:
+        self.use_content_fallback = use_content_fallback
 
     def detect_file(self, file_path: str | os.PathLike) -> str | None:
         path = Path(file_path)
@@ -56,7 +75,7 @@ class LanguageDetector:
         if ext in EXTENSION_MAP:
             return EXTENSION_MAP[ext]
 
-        if not self.use_guesslang_fallback:
+        if not self.use_content_fallback:
             return None
 
         try:
@@ -71,7 +90,7 @@ class LanguageDetector:
             if ext in EXTENSION_MAP:
                 return EXTENSION_MAP[ext]
 
-        if not self.use_guesslang_fallback:
+        if not self.use_content_fallback:
             return None
         return self._detect_by_content_string(code)
 
@@ -82,27 +101,27 @@ class LanguageDetector:
     def _detect_by_content_string(self, text: str) -> str | None:
         if not text.strip():
             return None
-        if self._guesser is None:
-            self._guesser = self._load_guesser()
-        if self._guesser is None:
-            return None
         try:
-            return self._guesser.language_name(text).lower()
-        except Exception:
-            return None
-
-    @staticmethod
-    def _load_guesser():
-        try:
-            from guesslang import Guess  # type: ignore
+            from pygments.lexers import guess_lexer
+            from pygments.util import ClassNotFound
         except ImportError:
             return None
-        return Guess()
+
+        try:
+            lexer = guess_lexer(text)
+        except ClassNotFound:
+            return None
+
+        if not lexer.aliases:
+            return None
+
+        alias = lexer.aliases[0].lower()
+        return _PYGMENTS_ALIAS_MAP.get(alias, alias)
 
 
-def detect_directory(root: str | os.PathLike, use_guesslang_fallback: bool = True) -> dict[str, str]:
+def detect_directory(root: str | os.PathLike, use_content_fallback: bool = True) -> dict[str, str]:
     """Detects languages for every file under `root`. Returns {relative_path: language}."""
-    detector = LanguageDetector(use_guesslang_fallback=use_guesslang_fallback)
+    detector = LanguageDetector(use_content_fallback=use_content_fallback)
     root_path = Path(root)
     results: dict[str, str] = {}
     for file_path in root_path.rglob("*"):
