@@ -66,7 +66,9 @@ _PYGMENTS_ALIAS_MAP: dict[str, str] = {
 class LanguageDetector:
     """Detects language for a single file, with an optional pygments fallback."""
 
-    def __init__(self, use_content_fallback: bool = True) -> None:
+    def __init__(self, use_content_fallback: bool = True, use_guesslang_fallback: bool | None = None) -> None:
+        if use_guesslang_fallback is not None:
+            use_content_fallback = use_guesslang_fallback
         self.use_content_fallback = use_content_fallback
 
     def detect_file(self, file_path: str | os.PathLike) -> str | None:

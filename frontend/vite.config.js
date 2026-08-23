@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/scan": "http://localhost:8000",
-      "/report": "http://localhost:8000",
-      "/history": "http://localhost:8000",
+      "/scan": "http://127.0.0.1:8000",
+      "/report": "http://127.0.0.1:8000",
+      "/history": "http://127.0.0.1:8000",
     },
   },
 });

@@ -32,6 +32,11 @@ def on_startup() -> None:
     init_db()
 
 
+@app.get("/")
+def root() -> dict:
+    return {"service": "securify-api", "status": "ok", "health": "/health"}
+
+
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}
