@@ -1,42 +1,118 @@
+/* ═══════════════════════════════════════════════════════════
+   Securify — Global Design System
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body {
-  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
-  margin: 2rem;
-  color: #111827;
-  background: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 1rem;
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+  /* Background layers */
+  --bg-base:        #06080d;
+  --bg-surface:     #0c1017;
+  --bg-raised:      #111720;
+  --bg-overlay:     rgba(12, 16, 23, 0.85);
+
+  /* Border */
+  --border-subtle:  rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.09);
+  --border-strong:  rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text-primary:   #e8ecf1;
+  --text-secondary: #8b95a5;
+  --text-muted:     #555f70;
+
+  /* Accent — Cyan/Blue */
+  --accent:         #38bdf8;
+  --accent-dim:     rgba(56, 189, 248, 0.12);
+  --accent-glow:    rgba(56, 189, 248, 0.25);
+
+  /* Accent — Purple (ML) */
+  --purple:         #a78bfa;
+  --purple-dim:     rgba(167, 139, 250, 0.12);
+
+  /* Accent — Amber (LLM) */
+  --amber:          #fbbf24;
+  --amber-dim:      rgba(251, 191, 36, 0.12);
+
+  /* Accent — Green (Static) */
+  --green:          #34d399;
+  --green-dim:      rgba(52, 211, 153, 0.12);
+
+  /* Severity */
+  --sev-critical:   #f43f5e;
+  --sev-critical-dim: rgba(244, 63, 94, 0.12);
+  --sev-high:       #f97316;
+  --sev-high-dim:   rgba(249, 115, 22, 0.12);
+  --sev-medium:     #eab308;
+  --sev-medium-dim: rgba(234, 179, 8, 0.12);
+  --sev-low:        #22c55e;
+  --sev-low-dim:    rgba(34, 197, 94, 0.12);
+  --sev-info:       #64748b;
+  --sev-info-dim:   rgba(100, 116, 139, 0.12);
+
+  /* Danger */
+  --danger:         #ef4444;
+  --danger-dim:     rgba(239, 68, 68, 0.10);
+
+  /* Typography */
+  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:  'JetBrains Mono', 'SF Mono', 'Cascadia Code', monospace;
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 40px var(--accent-glow);
+
+  /* Transitions */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-th, td {
-  border: 1px solid #d1d5db;
-  padding: 0.5rem;
-  text-align: left;
-  font-size: 0.85rem;
-  vertical-align: top;
+/* ── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
 }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
-th {
-  background: #f3f4f6;
-}
-
-.summary {
-  display: flex;
-  gap: 1.5rem;
-  margin: 1rem 0;
-}
-
-.summary div {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-}
-
-.severity-critical { color: #7f1d1d; font-weight: 600; }
-.severity-high { color: #b91c1c; font-weight: 600; }
-.severity-medium { color: #b45309; font-weight: 600; }
-.severity-low { color: #15803d; font-weight: 600; }
+/* ── Severity utility classes ──────────────────────────── */
+.severity-critical { color: var(--sev-critical); font-weight: 600; }
+.severity-high     { color: var(--sev-high);     font-weight: 600; }
+.severity-medium   { color: var(--sev-medium);   font-weight: 600; }
+.severity-low      { color: var(--sev-low);      font-weight: 600; }
+.severity-info     { color: var(--sev-info);      font-weight: 500; }

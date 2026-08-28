@@ -288,7 +288,7 @@ cd vuln-detection-framework
 
 # Create a virtual environment
 python -m venv venv
-source venv/bin/activate   # or venv\Scripts\activate on Windows
+source venv/bin/activate   # .\venv\Scripts\Activate.ps1 on Windows
 
 # Install dependencies
 pip install -r requirements.txt

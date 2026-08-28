@@ -1,0 +1,329 @@
+/* ═══════════════════════════════════════════════════════════
+   FindingsTable — Premium Vulnerability Findings Display
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Container ─────────────────────────────────────────── */
+.findings-table-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* ── Empty State ───────────────────────────────────────── */
+.findings-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.findings-empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.5;
+}
+
+.findings-empty-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.findings-empty-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ── Table ─────────────────────────────────────────────── */
+.findings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.findings-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.findings-table th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  padding: 0.75rem 1rem;
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.findings-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.findings-table tbody tr {
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+
+.findings-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.findings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Location Cell ─────────────────────────────────────── */
+.findings-location {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.findings-location-line {
+  color: var(--accent);
+}
+
+/* ── Type Cell ─────────────────────────────────────────── */
+.findings-type {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+}
+
+/* ── CWE Badge ─────────────────────────────────────────── */
+.findings-cwe {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--purple-dim);
+  color: var(--purple);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.findings-cwe.is-none {
+  background: var(--border-subtle);
+  color: var(--text-muted);
+}
+
+/* ── Severity Badge ────────────────────────────────────── */
+.findings-severity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.findings-severity-badge.critical {
+  background: var(--sev-critical-dim);
+  color: var(--sev-critical);
+}
+.findings-severity-badge.high {
+  background: var(--sev-high-dim);
+  color: var(--sev-high);
+}
+.findings-severity-badge.medium {
+  background: var(--sev-medium-dim);
+  color: var(--sev-medium);
+}
+.findings-severity-badge.low {
+  background: var(--sev-low-dim);
+  color: var(--sev-low);
+}
+.findings-severity-badge.info {
+  background: var(--sev-info-dim);
+  color: var(--sev-info);
+}
+
+/* ── Confidence Bar ────────────────────────────────────── */
+.findings-confidence {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 100px;
+}
+
+.findings-confidence-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--border-default);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.findings-confidence-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s var(--ease-out);
+}
+
+.findings-confidence-fill.high {
+  background: var(--green);
+}
+.findings-confidence-fill.mid {
+  background: var(--amber);
+}
+.findings-confidence-fill.low {
+  background: var(--sev-high);
+}
+
+.findings-confidence-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ── Source Engine Pills ───────────────────────────────── */
+.findings-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.findings-source-pill {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.45rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.findings-source-pill.static_analysis {
+  background: var(--green-dim);
+  color: var(--green);
+}
+
+.findings-source-pill.ml_classifier {
+  background: var(--purple-dim);
+  color: var(--purple);
+}
+
+.findings-source-pill.llm_reasoning,
+.findings-source-pill.llm {
+  background: var(--amber-dim);
+  color: var(--amber);
+}
+
+.findings-source-pill.generic {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* ── Expandable Row ────────────────────────────────────── */
+.findings-expand-row td {
+  padding: 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.findings-expand-content {
+  padding: 1rem 1.5rem 1.25rem;
+  background: var(--bg-raised);
+  border-top: 1px solid var(--border-subtle);
+  animation: expand-in 0.25s var(--ease-out);
+}
+
+@keyframes expand-in {
+  from { opacity: 0; max-height: 0; }
+  to   { opacity: 1; max-height: 500px; }
+}
+
+.findings-expand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.findings-expand-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.findings-expand-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.findings-expand-text {
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+
+.findings-expand-text.is-fix {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  background: var(--bg-base);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  white-space: pre-wrap;
+}
+
+/* ── Chevron ───────────────────────────────────────────── */
+.findings-chevron {
+  display: inline-flex;
+  transition: transform 0.25s var(--ease-out);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.findings-chevron.is-open {
+  transform: rotate(90deg);
+}
+
+/* ── Responsive ────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .findings-expand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .findings-table th:nth-child(n+6),
+  .findings-table td:nth-child(n+6) {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .findings-table th:nth-child(3),
+  .findings-table td:nth-child(3),
+  .findings-table th:nth-child(5),
+  .findings-table td:nth-child(5) {
+    display: none;
+  }
+
+  .findings-table th,
+  .findings-table td {
+    padding: 0.6rem 0.65rem;
+  }
+}
