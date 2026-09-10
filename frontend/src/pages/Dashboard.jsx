@@ -3,9 +3,9 @@ import FindingsTable from "../components/FindingsTable.jsx";
 import "./Dashboard.css";
 
 const PIPELINE_STAGES = [
-  { key: "static", label: "Static Analysis", icon: "🔍" },
-  { key: "ml", label: "ML Classifier", icon: "🧠" },
-  { key: "llm", label: "LLM Reasoning", icon: "⚡" },
+  { key: "static", label: "Static analysis", detail: "Semgrep + Bandit rulesets" },
+  { key: "ml", label: "ML classifier", detail: "Fine-tuned CodeBERT" },
+  { key: "llm", label: "LLM reasoning", detail: "Explains and filters findings" },
 ];
 
 function formatBytes(bytes) {
@@ -68,7 +68,11 @@ export default function Dashboard() {
   }, [scanning]);
 
   async function handleScan() {
-    if (!file) return;
+    console.log("handleScan fired, file =", file);
+    if (!file) {
+      console.warn("handleScan: no file selected, returning early");
+      return;
+    }
     setScanning(true);
     setError(null);
     setResult(null);
@@ -76,14 +80,24 @@ export default function Dashboard() {
     const formData = new FormData();
     formData.append("file", file);
 
+    console.log("handleScan: sending POST /scan/file for", file.name, file.size, "bytes");
     try {
       const res = await fetch("/scan/file", { method: "POST", body: formData });
+      console.log("handleScan: response status", res.status);
+      const text = await res.text();
+      console.log("handleScan: response body (first 500 chars)", text.substring(0, 500));
       if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.detail || `Scan failed (${res.status})`);
+        let detail = `Scan failed (${res.status})`;
+        try {
+          detail = JSON.parse(text).detail || detail;
+        } catch {}
+        throw new Error(detail);
       }
-      setResult(await res.json());
+      const data = JSON.parse(text);
+      console.log("handleScan: parsed result, scan_id =", data.scan_id);
+      setResult(data);
     } catch (err) {
+      console.error("handleScan: error", err);
       setError(err.message);
     } finally {
       setScanning(false);
@@ -145,24 +159,18 @@ export default function Dashboard() {
   }
 
   const severities = result?.summary?.by_severity || {};
+  const severityOrder = ["critical", "high", "medium", "low"];
 
   return (
-    <div className="dash-shell">
-      {/* Animated Background */}
-      <div className="dash-bg">
-        <div className="dash-bg-orb" />
-        <div className="dash-bg-orb" />
-        <div className="dash-bg-orb" />
-      </div>
-
-      {/* Mobile header */}
-      <div className="dash-mobile-header">
-        <div className="dash-mobile-brand">
-          <div className="dash-mobile-logo">S</div>
-          Securify
+    <div className="sc-shell">
+      {/* Mobile top bar */}
+      <div className="sc-topbar">
+        <div className="sc-brand">
+          <span className="sc-brand-mark">S</span>
+          <span className="sc-brand-name">Securify</span>
         </div>
         <button
-          className="dash-hamburger"
+          className="sc-menu-btn"
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-label="Toggle menu"
         >
@@ -170,85 +178,73 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* Mobile overlay */}
       <div
-        className={`dash-overlay ${sidebarOpen ? "is-visible" : ""}`}
+        className={`sc-scrim ${sidebarOpen ? "is-visible" : ""}`}
         onClick={() => setSidebarOpen(false)}
       />
 
-      {/* Sidebar */}
-      <aside className={`dash-sidebar ${sidebarOpen ? "is-open" : ""}`}>
-        <div className="dash-sidebar-brand">
-          <div className="dash-sidebar-logo">
-            <div className="dash-logo-icon">S</div>
-            <span className="dash-logo-text">Securify</span>
-            <span className="dash-logo-badge">v1</span>
+      {/* Rail */}
+      <aside className={`sc-rail ${sidebarOpen ? "is-open" : ""}`}>
+        <div className="sc-rail-brand">
+          <span className="sc-brand-mark">S</span>
+          <div className="sc-rail-brand-text">
+            <span className="sc-rail-brand-name">Securify</span>
+            <span className="sc-rail-brand-tag">vulnerability scanner</span>
           </div>
         </div>
 
-        <nav className="dash-sidebar-nav">
-          <button className="dash-nav-item is-active">
-            <span className="dash-nav-icon">🛡️</span>
-            Scanner
-          </button>
-          <button className="dash-nav-item" disabled>
-            <span className="dash-nav-icon">📊</span>
+        <nav className="sc-rail-nav">
+          <button className="sc-rail-item is-active">Scanner</button>
+          <button className="sc-rail-item" disabled>
             Analytics
           </button>
-          <button className="dash-nav-item" disabled>
-            <span className="dash-nav-icon">⚙️</span>
+          <button className="sc-rail-item" disabled>
             Settings
           </button>
         </nav>
 
-        <div className="dash-sidebar-section">
-          <div className="dash-sidebar-section-title">Recent Scans</div>
+        <div className="sc-rail-section">
+          <div className="sc-rail-label">Recent scans</div>
           {history.length === 0 ? (
-            <div className="dash-history-empty">No scans yet</div>
+            <div className="sc-rail-empty">Nothing scanned yet</div>
           ) : (
-            history.map((h) => (
-              <button
-                key={h.scan_id}
-                className="dash-history-item"
-                onClick={() => loadHistoryScan(h.scan_id)}
-              >
-                <span className="dash-history-target">{h.target}</span>
-                <span className="dash-history-meta">
-                  <span className="dash-history-findings-count">
-                    {h.total_findings} findings
+            <div className="sc-rail-list">
+              {history.map((h) => (
+                <button
+                  key={h.scan_id}
+                  className="sc-history-row"
+                  onClick={() => loadHistoryScan(h.scan_id)}
+                >
+                  <span className="sc-history-name">{h.target}</span>
+                  <span className="sc-history-meta">
+                    <span>{h.total_findings} findings</span>
+                    <span>{formatDate(h.created_at)}</span>
                   </span>
-                  <span>·</span>
-                  <span>{formatDate(h.created_at)}</span>
-                </span>
-              </button>
-            ))
+                </button>
+              ))}
+            </div>
           )}
         </div>
 
-        <div className="dash-sidebar-footer">
-          <div className="dash-sidebar-status">
-            <span
-              className={`dash-status-dot ${scanning ? "is-scanning" : ""}`}
-            />
-            {scanning ? "Scanning…" : "System Ready"}
-          </div>
+        <div className="sc-rail-status">
+          <span className={`sc-status-dot ${scanning ? "is-active" : ""}`} />
+          {scanning ? "Scanning" : "Ready"}
         </div>
       </aside>
 
-      {/* Main Content */}
-      <main className="dash-main">
-        <div className="dash-page-header">
-          <h1>Vulnerability Scanner</h1>
-          <p className="dash-page-subtitle">
-            Upload a file to scan for security vulnerabilities using static
-            analysis, ML classification, and LLM reasoning.
+      {/* Main */}
+      <main className="sc-main">
+        <header className="sc-header">
+          <h1>Scan a file for vulnerabilities</h1>
+          <p>
+            Runs static analysis, a fine-tuned ML classifier, and LLM
+            reasoning, then merges what each layer finds into one report.
           </p>
-        </div>
+        </header>
 
-        {/* Upload Zone */}
-        {!scanning && (
+        {!scanning && !result && (
           <div
-            className={`dash-upload-zone ${dragover ? "is-dragover" : ""} ${
+            className={`sc-intake ${dragover ? "is-dragover" : ""} ${
               file ? "has-file" : ""
             }`}
             onDragOver={handleDragOver}
@@ -258,16 +254,15 @@ export default function Dashboard() {
           >
             {file ? (
               <>
-                <div className="dash-file-preview">
-                  <div className="dash-file-icon">📄</div>
-                  <div className="dash-file-info">
-                    <div className="dash-file-name">{file.name}</div>
-                    <div className="dash-file-size">
+                <div className="sc-intake-file">
+                  <div className="sc-intake-file-main">
+                    <span className="sc-intake-file-name">{file.name}</span>
+                    <span className="sc-intake-file-size">
                       {formatBytes(file.size)}
-                    </div>
+                    </span>
                   </div>
                   <button
-                    className="dash-file-remove"
+                    className="sc-icon-btn"
                     onClick={(e) => {
                       e.stopPropagation();
                       setFile(null);
@@ -277,8 +272,8 @@ export default function Dashboard() {
                     ✕
                   </button>
                 </div>
-                <div className="dash-upload-actions">
-                  <label className="dash-btn dash-btn-ghost">
+                <div className="sc-intake-actions">
+                  <label className="sc-btn sc-btn-ghost">
                     Change file
                     <input
                       ref={fileInputRef}
@@ -288,26 +283,26 @@ export default function Dashboard() {
                     />
                   </label>
                   <button
-                    className="dash-btn dash-btn-primary"
+                    type="button"
+                    className="sc-btn sc-btn-signal"
                     onClick={(e) => {
                       e.stopPropagation();
                       handleScan();
                     }}
                     disabled={!file || scanning}
                   >
-                    🚀 Run Scan
+                    Run scan
                   </button>
                 </div>
               </>
             ) : (
               <>
-                <span className="dash-upload-icon">🔒</span>
-                <div className="dash-upload-title">
-                  Drop your file here to scan
+                <div className="sc-intake-title">
+                  Drop a source file here, or click to browse
                 </div>
-                <div className="dash-upload-subtitle">
-                  or click to browse — supports source code files in all major
-                  languages
+                <div className="sc-intake-subtitle">
+                  Any language is accepted — coverage depth depends on
+                  language tier
                 </div>
                 <input
                   ref={fileInputRef}
@@ -320,146 +315,116 @@ export default function Dashboard() {
           </div>
         )}
 
-        {/* Scanning Progress */}
         {scanning && (
-          <div className="dash-scanning">
-            <div className="dash-scanning-header">
-              <div className="dash-scanning-spinner" />
-              <span className="dash-scanning-title">
-                Analyzing vulnerabilities…
-              </span>
-              {file && (
-                <span className="dash-scanning-file">{file.name}</span>
-              )}
+          <div className="sc-log">
+            <div className="sc-log-head">
+              <span className="sc-log-title">Analyzing</span>
+              {file && <span className="sc-log-file">{file.name}</span>}
             </div>
-
-            <div className="dash-pipeline">
+            <ol className="sc-log-stages">
               {PIPELINE_STAGES.map((stage, i) => (
-                <div
+                <li
                   key={stage.key}
-                  className={`dash-pipeline-stage ${
+                  className={`sc-log-stage ${
                     i < pipelineStage
                       ? "is-done"
                       : i === pipelineStage
                       ? "is-active"
-                      : ""
+                      : "is-pending"
                   }`}
                 >
-                  <div className="dash-pipeline-dot">
-                    {i < pipelineStage ? "✓" : stage.icon}
-                  </div>
-                  <span className="dash-pipeline-label">{stage.label}</span>
-                  <div className="dash-pipeline-connector" />
-                </div>
+                  <span className="sc-log-marker">
+                    {i < pipelineStage ? "✓" : i + 1}
+                  </span>
+                  <span className="sc-log-text">
+                    <span className="sc-log-label">{stage.label}</span>
+                    <span className="sc-log-detail">{stage.detail}</span>
+                  </span>
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
         )}
 
-        {/* Error */}
         {error && (
-          <div className="dash-error">
-            <span className="dash-error-icon">⚠️</span>
-            <div className="dash-error-content">
-              <div className="dash-error-label">Scan Failed</div>
-              <div className="dash-error-msg">{error}</div>
-            </div>
+          <div className="sc-alert">
+            <span className="sc-alert-label">Scan failed</span>
+            <span className="sc-alert-msg">{error}</span>
           </div>
         )}
 
-        {/* Results */}
         {result && (
-          <div className="dash-results">
-            <div className="dash-results-header">
-              <span className="dash-results-title">Scan Results</span>
-              <div className="dash-results-actions">
-                <button
-                  className="dash-btn dash-btn-outline"
-                  onClick={handleDownloadPDF}
-                >
-                  📄 Download PDF
+          <div className="sc-report">
+            <div className="sc-report-head">
+              <div>
+                <span className="sc-report-title">Scan report</span>
+                <div className="sc-report-id">
+                  {result.scan_id}
+                  <button
+                    className="sc-copy-btn"
+                    onClick={handleCopyId}
+                    title="Copy scan ID"
+                  >
+                    {copiedId ? "copied" : "copy"}
+                  </button>
+                </div>
+              </div>
+              <div className="sc-report-actions">
+                <button className="sc-btn sc-btn-ghost" onClick={handleDownloadPDF}>
+                  Download PDF
                 </button>
                 <button
-                  className="dash-btn dash-btn-primary"
+                  className="sc-btn sc-btn-signal"
                   onClick={() => {
                     setResult(null);
                     setFile(null);
                   }}
                 >
-                  + New Scan
+                  New scan
                 </button>
               </div>
             </div>
 
-            {/* Scan ID */}
-            <div className="dash-scan-id-row">
-              <span className="dash-scan-id-label">Scan ID</span>
-              <span className="dash-scan-id-value">{result.scan_id}</span>
-              <button
-                className="dash-scan-id-copy"
-                onClick={handleCopyId}
-                title="Copy scan ID"
-              >
-                {copiedId ? "✓" : "📋"}
-              </button>
-            </div>
-
-            {/* Stat Cards */}
-            <div className="dash-stats-grid">
-              <div className="dash-stat-card">
-                <div className="dash-stat-label">Files Scanned</div>
-                <div className="dash-stat-value">
+            <div className="sc-meta-row">
+              <div className="sc-meta-item">
+                <span className="sc-meta-label">Files scanned</span>
+                <span className="sc-meta-value">
                   {result.summary.files_scanned}
-                </div>
+                </span>
               </div>
-              <div className="dash-stat-card">
-                <div className="dash-stat-label">Total Findings</div>
-                <div className="dash-stat-value">
+              <div className="sc-meta-item">
+                <span className="sc-meta-label">Total findings</span>
+                <span className="sc-meta-value">
                   {result.summary.total_findings}
-                </div>
+                </span>
               </div>
-              <div className="dash-stat-card">
-                <div className="dash-stat-label">Critical / High</div>
-                <div className="dash-stat-value">
-                  {(severities.critical || 0) + (severities.high || 0)}
-                </div>
-              </div>
-              <div className="dash-stat-card">
-                <div className="dash-stat-label">Scanned At</div>
-                <div className="dash-stat-value is-mono-sm">
+              <div className="sc-meta-item">
+                <span className="sc-meta-label">Scanned</span>
+                <span className="sc-meta-value sc-mono-sm">
                   {formatDate(result.created_at)}
-                </div>
+                </span>
               </div>
             </div>
 
-            {/* Severity Breakdown */}
             {result.summary.total_findings > 0 && (
-              <>
-                <div className="dash-section-title">Severity Breakdown</div>
-                <div className="dash-severity-row">
-                  {["critical", "high", "medium", "low"].map(
-                    (sev) =>
-                      (severities[sev] || 0) > 0 && (
-                        <div key={sev} className="dash-severity-chip">
-                          <span
-                            className={`dash-severity-dot ${sev}`}
-                          />
-                          <span className="dash-severity-chip-label">
-                            {sev.charAt(0).toUpperCase() + sev.slice(1)}
-                          </span>
-                          <span className="dash-severity-chip-count">
-                            {severities[sev]}
-                          </span>
-                        </div>
-                      )
-                  )}
-                </div>
-              </>
+              <div className="sc-severity-row">
+                {severityOrder.map(
+                  (sev) =>
+                    (severities[sev] || 0) > 0 && (
+                      <div key={sev} className="sc-severity-item">
+                        <span className={`sc-sev-dot sev-${sev}`} />
+                        <span className="sc-sev-label">{sev}</span>
+                        <span className="sc-sev-count">{severities[sev]}</span>
+                      </div>
+                    )
+                )}
+              </div>
             )}
 
-            {/* Findings Table */}
-            <div className="dash-section-title">Findings Detail</div>
-            <FindingsTable files={result.files} />
+            <div className="sc-report-section">
+              <div className="sc-section-title">Findings</div>
+              <FindingsTable files={result.files} />
+            </div>
           </div>
         )}
       </main>

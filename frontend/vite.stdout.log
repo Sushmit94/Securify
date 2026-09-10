@@ -1,0 +1,10 @@
+
+> securify-frontend@0.1.0 dev
+> vite --host 127.0.0.1 --port 5173
+
+
+  VITE v5.4.21  ready in 287 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+9:43:36 am [vite] hmr update /src/pages/Dashboard.css
+9:43:49 am [vite] hmr update /src/pages/Dashboard.jsx

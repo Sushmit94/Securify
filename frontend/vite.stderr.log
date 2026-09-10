@@ -1,0 +1,6 @@
+9:08:41 am [vite] http proxy error: /history?limit=20
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+9:08:41 am [vite] http proxy error: /history?limit=20
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
