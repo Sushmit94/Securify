@@ -1,0 +1,500 @@
+{"id": "0", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "3", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "4", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "7", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "9", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "10", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "11", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "17", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "21", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "23", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "34", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "36", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "40", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "41", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "49", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "50", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "55", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "57", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "65", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "70", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "71", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "72", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "90", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "91", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "97", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "98", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "104", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "117", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "119", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "121", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "135", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "143", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "148", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "152", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "155", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "160", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "182", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "183", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "188", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "200", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "209", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "217", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "222", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "224", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "226", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "228", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "236", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "251", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "252", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "261", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "265", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "267", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "272", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "274", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "275", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "287", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "294", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "301", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "306", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "314", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "319", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "331", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "332", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "333", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "334", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "337", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "338", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "341", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "342", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "363", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "364", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "366", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "374", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "381", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "387", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "398", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "400", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "402", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "406", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "410", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "412", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "414", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "422", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "423", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "427", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "430", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "431", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "437", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "446", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "452", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "466", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "470", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "476", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "479", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "482", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "486", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "488", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "496", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "501", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "503", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "504", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "506", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "518", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "532", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "533", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "534", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "537", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "545", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "549", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "553", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "560", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "568", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "573", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "576", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "577", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "578", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "593", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "599", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "601", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "614", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "615", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "621", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "628", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "642", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "645", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "649", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "667", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "668", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "673", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "678", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "689", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "691", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "699", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "702", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "705", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "710", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "711", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "713", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "723", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "727", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "732", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "737", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "746", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "753", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "764", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "768", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "769", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "773", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "774", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "782", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "786", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "788", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "792", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "798", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "799", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "800", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "801", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "804", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "818", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "819", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "821", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "825", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "831", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "834", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "838", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "840", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "842", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "844", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "853", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "856", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "857", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "861", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "883", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "886", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "887", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "909", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "915", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "927", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "936", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "939", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "940", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "955", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "956", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "957", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "964", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "966", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "982", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "983", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "985", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "990", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1001", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1009", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1013", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1021", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1025", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1032", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1034", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1046", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1048", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1054", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1055", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1056", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1064", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1066", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1080", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1091", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1107", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1113", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1120", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1121", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1122", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1125", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1134", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1136", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1145", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1153", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1158", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1160", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1163", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1166", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1188", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1189", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1195", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1214", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1219", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1221", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1231", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1234", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1237", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1238", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1242", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1247", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1252", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1253", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1255", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1257", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1258", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1261", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1265", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1267", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1270", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1282", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1287", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1291", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1293", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1298", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1305", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1310", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1312", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1315", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1318", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1321", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1331", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1333", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1349", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1362", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1364", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1369", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1402", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1403", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1409", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1412", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1423", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1425", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1427", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1437", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1442", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1445", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1452", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1454", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1458", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1461", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1462", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1463", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1480", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1484", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1487", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1488", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1490", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1495", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1496", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1497", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1509", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1511", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1518", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1522", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1524", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1542", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1543", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1544", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1547", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1551", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1559", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1561", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1564", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1567", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1578", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1585", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1586", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1589", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1593", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1603", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1608", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1618", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1627", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1630", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1639", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1641", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1645", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1647", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1651", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1655", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1659", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1665", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1673", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1674", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1675", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1680", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1687", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1698", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1709", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1715", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1719", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1721", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1723", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1725", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1727", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1730", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1735", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1736", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1745", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1757", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1758", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1770", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1772", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1803", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1806", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1807", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1824", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1825", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1831", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1833", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1834", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1841", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1842", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1851", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1854", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1874", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1882", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1886", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1900", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1915", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1916", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1925", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1929", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1930", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1935", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1942", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1945", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1957", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1958", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1960", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1967", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1976", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1977", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1985", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1994", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "1997", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2010", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2016", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2017", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2035", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2037", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2038", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2039", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2041", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2042", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2045", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2051", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2053", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2057", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2074", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2078", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2084", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2085", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2104", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2106", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2113", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2114", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2123", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2127", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2134", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2138", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2144", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2145", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2147", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2153", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2155", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2158", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2159", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2183", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2185", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2201", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2211", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2213", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2217", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2229", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2244", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2247", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2248", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2252", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2260", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2264", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2267", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2272", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2283", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2284", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2286", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2288", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2291", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2296", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2307", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2314", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2318", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2324", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2325", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2329", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2332", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2335", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2342", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2343", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2345", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2348", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2349", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2354", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2355", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2362", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2365", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2376", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2387", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2391", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2407", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2414", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2428", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2432", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2439", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2443", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2445", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2449", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2455", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2457", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2458", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2462", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2466", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2467", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2477", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2489", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2503", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2509", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2519", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2528", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2536", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2538", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2539", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2540", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2551", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2557", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2569", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2572", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2575", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2577", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2579", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2581", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2587", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2589", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2590", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2593", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2594", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2605", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2609", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2610", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2611", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2620", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2626", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2629", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2631", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2636", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2638", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2642", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2645", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2650", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2653", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2663", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2668", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2669", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2672", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2684", "ground_truth": "Vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2691", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2704", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
+{"id": "2712", "ground_truth": "Not vulnerable", "prediction": "Not vulnerable", "score": 0.0, "static": false, "ml": false, "llm": false, "error": null}
